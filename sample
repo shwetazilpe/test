@@ -1,0 +1,13 @@
+Test Repository Text
+
+	1. Created a project name : Shweta_test
+	2. Enable the API for project
+	3. Created api credentials and service account keyhttps://console.developers.google.com/apis/credentials?project=shweta-test-227508&organizationId=868183679910
+	4. Deploying Connector : https://developers.google.com/cloud-search/docs/tutorials/end-to-end/setup-connectorDownload Content Connector SDK, unzip it and install each portion of SDK using below cmds
+	mvn org.apache.maven.plugins:maven-install-plugin:3.0.0-M1::install-file -DpomFile=parent/pom.xml -Dpackaging=pom -Dfile=parent/pom.xml
+	mvn org.apache.maven.plugins:maven-install-plugin:3.0.0-M1::install-file -Dfile=lib/google-api-services-cloudsearch-v1-rev0-1.23.0.jar
+	mvn org.apache.maven.plugins:maven-install-plugin:3.0.0-M1::install-file -Dfile=lib/google-cloudsearch-connector-sdk-v1-0.0.2.jar
+	mvn org.apache.maven.plugins:maven-install-plugin:3.0.0-M1::install-file -Dfile=google-cloudsearch-indexing-connector-sdk-v1-0.0.2.jar
+	5. Build the connector: change working directory to D:\Baseline\GoogleCloudSearch\GCS_Project\cloud-search-samples\end-to-end\connector> and run cmd 
+	mvn package -DskipTeststhis cmd will downlod all the required dependancies to build to con
+	
